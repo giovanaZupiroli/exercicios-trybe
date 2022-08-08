@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Java
+Ruby
+SQL
+Opera
+Python
