@@ -1,0 +1,25 @@
+Branch é uma versão independete e editável que se cria de um código
+ A Branch principal do código, a Oficial, onde ele é consolidado, é a Master
+ SSH - se conecta sem precisar digitar nome e chave de acesso
+ HTTPS: utiliza certificados digitais para autenticar dados e criptografar de forma segura, voce cria um token de acesso pessoal pra usar no lugar da senha
+ 
+ 
+ # Execute o comando git status para verificar o status do repositório
+ # Adicionar todos os arquivos modificados
+git add .
+ # Ou você também pode adicionar arquivos específicos
+git add meu_arquivo.txt meu_outro_arquivo.txt
+# Ao comitar você deve adicionar também uma mensagem que descreve o que aquela alteração faz
+
+git commit -m "Mensagem sobre a alteração feita"
+
+Em suma, todo esse processo acontece nessa ordem:
+Uma pasta é criada para armazenar um repositório local (mkdir <nome da pasta>);
+Nos movemos para a pasta criada (cd <nome da pasta criada>);
+Um repositório local é criado nessa pasta, e aqui já será possível ter controle de versionamento (git init);
+Modificamos os arquivos que queremos modificar;
+Verificamos quais arquivos foram alterados (git status);
+Arquivos selecionados pelo usuário são adicionados ao que será modificado na próxima versão (git add);
+Uma nova versão desse repositório local é criada com uma descrição do que essa versão muda em relação à antiga (git commit -m "<mensagem desejada>");
+Empurra as alterações do repositório local para o repositório remoto (git push).
+
