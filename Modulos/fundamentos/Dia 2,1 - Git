@@ -21,5 +21,5 @@ Modificamos os arquivos que queremos modificar;
 Verificamos quais arquivos foram alterados (git status);
 Arquivos selecionados pelo usuário são adicionados ao que será modificado na próxima versão (git add);
 Uma nova versão desse repositório local é criada com uma descrição do que essa versão muda em relação à antiga (git commit -m "<mensagem desejada>");
-Empurra as alterações do repositório local para o repositório remoto (git push).
+Empurra as alterações do repositório local para o repositório remoto (git push origin master).
 
