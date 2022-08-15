@@ -1,0 +1,9 @@
+.fundoamarelo {
+    background-color: yellow;
+}
+#itensordenada li:nth-child(2n) {
+    color: green;
+}
+#itensordenada li:nth-child(2n+1) {
+    text-transform: uppercase;
+}
