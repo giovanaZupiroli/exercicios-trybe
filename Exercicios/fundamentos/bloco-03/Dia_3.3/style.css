@@ -20,3 +20,10 @@ li {
 li em {
     font-weight: bold;
 }
+#segundalista > li:nth-last-of-type(n+3) {
+    color: blue;
+}
+.Javanonome {
+    background-color: darkmagenta;
+}
+
