@@ -1,0 +1,20 @@
+div:hover {
+    border-style: solid;
+}
+
+div:first-of-type {
+    border-color: rosybrown;
+}
+
+div:nth-of-type(2) {
+    border-color: brown;
+}
+div:nth-of-type(3) {
+    border-color: crimson;
+}
+div:nth-of-type(4) {
+    border-color: darkred;
+}
+div:nth-of-type(5) {
+    border-style: red;
+}
