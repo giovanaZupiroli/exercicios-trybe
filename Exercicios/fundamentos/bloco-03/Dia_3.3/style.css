@@ -32,22 +32,22 @@ a:link {
 }
 
 #bonus li:hover #stack {
-    text-transform: bold;
+    font-weight: bold;
     color: orange;
 }
 #bonus li:hover #w3s {
-    text-transform: bold;
+    font-weight: bold;
     color: green;
 }
 #bonus li:hover #mdn {
-    text-transform: bold;
+    font-weight: bold;
     color: black;
 }
 #bonus li:hover #dev {
-    text-transform: bold;
+    font-weight: bold;
     color: yellow;
 }
 #bonus li:hover #trybe {
-    text-transform: bold;
+    font-weight: bold;
     color: green;
 }
