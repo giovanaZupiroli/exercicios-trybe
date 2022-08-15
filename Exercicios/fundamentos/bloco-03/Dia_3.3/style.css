@@ -27,3 +27,27 @@ li em {
     background-color: darkmagenta;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+#bonus li:hover #stack {
+    text-transform: bold;
+    color: orange;
+}
+#bonus li:hover #w3s {
+    text-transform: bold;
+    color: green;
+}
+#bonus li:hover #mdn {
+    text-transform: bold;
+    color: black;
+}
+#bonus li:hover #dev {
+    text-transform: bold;
+    color: yellow;
+}
+#bonus li:hover #trybe {
+    text-transform: bold;
+    color: green;
+}
