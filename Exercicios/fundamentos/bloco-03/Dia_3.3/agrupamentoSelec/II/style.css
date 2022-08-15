@@ -4,6 +4,7 @@ div:hover {
 
 div:first-of-type {
     border-color: rosybrown;
+    font-style: italic;
 }
 
 div:nth-of-type(2) {
@@ -11,10 +12,13 @@ div:nth-of-type(2) {
 }
 div:nth-of-type(3) {
     border-color: crimson;
+    font-size: larger;
+    font-style: italic;
 }
 div:nth-of-type(4) {
     border-color: darkred;
 }
 div:nth-of-type(5) {
     border-style: red;
+    font-style: italic;
 }
