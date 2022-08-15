@@ -15,17 +15,28 @@
   }
   
   .baloon {
-    z-index: 5;
+    z-index: 3;
+    /* float: left; */
+    /* position: absolute; */
   
   }
   
   .speech {
     font-size: 25px;
     z-index: 4;
+    position: absolute;
+    /* float: right; */
+    top: 570px;
+    left: 25px;
   }
   
   .bowser {
     width: 200px;
-    z-index: 3;
-    /* position: absolute; */
+    z-index: 5;
+    position: absolute;
+    left: 270px;
+    /* float: right; */
+    top: 720px;
+    
+    
   }
