@@ -1,0 +1,38 @@
+
+        body {
+            font-size: 16px;
+        }
+
+
+        h1 {
+            font-size: 65px;
+            color: orange;
+            font-family: sans-serif;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 3em;
+        }
+        
+        #listax {
+            background-color: rosybrown;
+            font-style: italic;
+            line-height: 33px;
+            text-align: center;
+            text-decoration:underline;
+        }
+
+        .cordefundo {
+            background-color: pink;
+        }
+        #yellow {
+            background-color: yellow;
+        }
+        #red {
+            background-color: red;
+        }
+        #brown {
+            background-color: brown;
+        }
+    
