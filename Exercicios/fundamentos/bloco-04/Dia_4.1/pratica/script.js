@@ -24,3 +24,14 @@ if (c > d) {
 }
 
 // 3
+const ee = 5
+const ff = 6 
+const gg = 7
+let alto3;
+if (ee > ff && ee > gg) {
+    console.log (alto3 = ee)
+} else if (ff > ee && ff > gg) {
+    console.log (alto3 = ff)
+} else {
+    console.log (alto3 = gg)
+}
