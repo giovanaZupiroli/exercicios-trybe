@@ -1,0 +1,53 @@
+.fundoamarelo {
+    background-color: yellow;
+}
+#itensordenada li:nth-child(2n) {
+    color: green;
+}
+#itensordenada li:nth-child(2n+1) {
+    text-transform: uppercase;
+}
+h1, h3 {
+    color: red;
+}
+#h1emitalico {
+    font-size: 40px;
+    border: solid black 1px;
+}
+li {
+    font-size: 20px;
+}
+li em {
+    font-weight: bold;
+}
+#segundalista > li:nth-last-of-type(n+3) {
+    color: blue;
+}
+.Javanonome {
+    background-color: darkmagenta;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#bonus li:hover #stack {
+    font-weight: bold;
+    color: orange;
+}
+#bonus li:hover #w3s {
+    font-weight: bold;
+    color: green;
+}
+#bonus li:hover #mdn {
+    font-weight: bold;
+    color: black;
+}
+#bonus li:hover #dev {
+    font-weight: bold;
+    color: yellow;
+}
+#bonus li:hover #trybe {
+    font-weight: bold;
+    color: green;
+}
