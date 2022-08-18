@@ -35,3 +35,14 @@ if (ee > ff && ee > gg) {
 } else {
     console.log (alto3 = gg)
 }
+
+// 4
+const valor = 0
+if (valor >= 1) {
+    console.log ("Positive");
+} else if (valor <= -1) {
+    console.log ('Negative')
+}  else {
+    console.log ('Zero')
+}
+
