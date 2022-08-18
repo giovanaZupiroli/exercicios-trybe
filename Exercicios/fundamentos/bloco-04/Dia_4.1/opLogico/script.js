@@ -26,3 +26,6 @@ if (weekDay == 'segunda-feira' || weekDay == 'terça-feira' || weekDay == 'quart
     console.log ('FINALMENTE, descanso merecido UwU');
 }
 
+//Operador NOT !==
+
+
