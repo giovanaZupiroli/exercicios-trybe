@@ -46,3 +46,16 @@ if (valor >= 1) {
     console.log ('Zero')
 }
 
+// 5
+let ang1 = 60;
+let ang2 = 40;
+let ang3 = 170; 
+if ((ang1 + ang2 + ang3) === 180) {
+    console.log ('true');
+} else if ((ang1 + ang2 + ang3) > 180 || ((ang1 + ang2 + ang3) < 180)) {
+    console.log ('false')
+} else {
+    console.log ('Erro!')
+}
+
+
