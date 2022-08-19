@@ -38,9 +38,9 @@ if (ee > ff && ee > gg) {
 
 // 4
 const valor = 0
-if (valor >= 1) {
+if (valor > 0) {
     console.log ("Positive");
-} else if (valor <= -1) {
+} else if (valor < 0) {
     console.log ('Negative')
 }  else {
     console.log ('Zero')
@@ -60,9 +60,46 @@ if ((ang1 + ang2 + ang3) === 180) {
 
 // 6
 let peca = "torre"
-if (peca === ("Torre".toLowerCase())) {
-    console.log ("Movimento Horizontal e Diagonal")
-} else {
-    console.log ("Errada!")
-}
+switch ("Torre".toLowerCase()) {
+    case 'bispo': 
+        console.log('Bispo = Diagonal.');
+    case 'rei':
+        console.log ('Rei = Uma casa em qqer direção.')
+    case 'cavalo':
+        console.log('Cavalo = Em L e pode pular sobre as peças.');
+        break;
+    case 'rainha':
+        console.log('Rainha = em Diagonal, horizontal e vertical.');
+        break;   
+    case 'torre':
+        console.log('Torre = em Horizontal e vertical.');
+        break; 
+    case 'peão':
+        console.log("Peão = Apenas uma casa para frente, no primeiro movimento podem ser duas casas.");
+        break;
+    default:
+        console.log('Erro, peça inválida!');
+        break;   
+} 
 
+
+// 7
+const nota = 99;
+if (nota < 0 || nota > 100) {
+    console.log ('Erro, essa nota não existe.')
+}  else if (nota >= 90) {
+    console.log ('A')
+} else if (nota >= 80) {
+    console.log ('B')
+} else if (nota >= 70) {
+    console.log ('C')
+} else if (nota >= 60) {
+    console.log ('D')
+} else if (nota >= 50) {
+    console.log ('E')
+} else if (nota < 50) {
+    console.log ('F')
+
+} else {
+    console.log ('F')
+}
