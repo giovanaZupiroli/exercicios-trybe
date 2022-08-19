@@ -103,3 +103,14 @@ if (nota < 0 || nota > 100) {
 } else {
     console.log ('F')
 }
+
+// 8
+const num1 = 5; 
+const num2 = 11;
+const num3 = 13;
+let par = false;
+
+if ((num1 % 2  === 0 || num2 % 2 === 0 || num3 % 2 === 0 )) {
+    par = true;
+};
+console.log(par);
