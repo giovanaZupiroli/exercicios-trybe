@@ -136,3 +136,45 @@ if (valorVenda >= 0 && custoBruto >= 0) {
     console.log ("Valor de entrada menor que 0.")
 }
  
+// 11
+const salarioBruto = 3000;
+let salarioLiquido;
+let impostoINSS;
+let salarioSemINSS;
+let impostoRenda;
+let aliquotaINSS
+let deducaoINSS;
+
+if (salarioBruto <= 1556.94) {
+    impostoINSS = salarioBruto * 0.08;
+} else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92) {
+    impostoINSS = salarioBruto * 0.09;
+} else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82) {
+    impostoINSS = salarioBruto * 0.11;
+} else {
+    impostoINSS = 570.88
+}
+
+salarioSemINSS = salarioBruto - impostoINSS;
+
+if (salarioSemINSS <= 1903.98) {
+    impostoRenda = 0
+    aliquotaINSS = 0
+} else if (salarioSemINSS >= 1903.99 && salarioSemINSS <= 2826.65) {
+    impostoRenda = salarioSemINSS * 0.075;
+    aliquotaINSS = 142.80
+} else if (salarioSemINSS >= 2826.66 && salarioSemINSS <= 3751.05) {
+    impostoRenda = salarioSemINSS * 0.15;
+    aliquotaINSS = 354.80
+} else if (salarioSemINSS >= 3751.06 && salarioSemINSS <= 4664.68) {
+    impostoRenda = salarioSemINSS * 0.225;
+    aliquotaINSS = 636.13
+} else {
+    impostoRenda = salarioSemINSS * 0.275;
+    aliquotaINSS = 869.36
+}
+deducaoINSS = (impostoRenda - aliquotaINSS);
+
+salarioLiquido = salarioSemINSS - deducaoINSS;
+
+console.log (salarioLiquido);
