@@ -58,4 +58,11 @@ if ((ang1 + ang2 + ang3) === 180) {
     console.log ('Erro!')
 }
 
+// 6
+let peca = "torre"
+if (peca === ("Torre".toLowerCase())) {
+    console.log ("Movimento Horizontal e Diagonal")
+} else {
+    console.log ("Errada!")
+}
 
