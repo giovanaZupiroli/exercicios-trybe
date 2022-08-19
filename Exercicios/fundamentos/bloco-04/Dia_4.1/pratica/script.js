@@ -114,3 +114,25 @@ if ((num1 % 2  === 0 || num2 % 2 === 0 || num3 % 2 === 0 )) {
     par = true;
 };
 console.log(par);
+
+// 9
+const num4 = 10;
+const num5 = 11;
+const num6 = 14;
+let impar = false;
+if ((num4 % 2 !== 0 || num5 % 2 !== 0 || num6 % 2 !== 0)) {
+    impar = true;
+};
+console.log(impar);
+
+// 10
+const custoBruto = 10;
+const valorVenda = 100;
+if (valorVenda >= 0 && custoBruto >= 0) {
+    const custoTotal = custoBruto * 1.2;
+    const lucroTotal = (valorVenda - custoTotal) * 1000;
+    console.log (lucroTotal);
+} else {
+    console.log ("Valor de entrada menor que 0.")
+}
+ 
