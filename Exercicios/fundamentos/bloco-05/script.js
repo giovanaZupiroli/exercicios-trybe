@@ -23,3 +23,17 @@ function exercicioQuatro() {
     correcao.innerText = 'Exercício 5.1 - JavaScript';
 }
 exercicioQuatro();
+
+function exercicioCinco() {
+    let maiuscula = document.getElementsByTagName('p')[0];
+    maiuscula.style.textTransform = 'uppercase';
+}
+exercicioCinco();
+
+function exercicioSeis() {
+    let show = document.getElementsByTagName('p');
+    for (let index = 0; index < show.length; index += 1) {
+        console.log(show[index].innerHTML);
+    }
+}
+exercicioSeis();
