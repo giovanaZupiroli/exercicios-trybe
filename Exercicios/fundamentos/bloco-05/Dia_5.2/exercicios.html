@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      
+      let ex1= document.createElement('h1');
+      ex1.className = 'title'
+      ex1.innerText = 'Exercicio 5.2 - JavaScript DOM';
+      document.body.appendChild(ex1);
+
+      let ex2 = document.createElement('main');
+      ex2.className = 'main-content';
+      document.body.appendChild(ex2);
+
+      let ex3 = document.createElement('section');
+      ex3.className = 'center-content';
+      ex2.appendChild(ex3);
+
+      let ex4 = document.createElement('p');
+      ex4.innerText = 'Não é fácil, mas também não é dificil.';
+      ex3.appendChild(ex4);
+
+      let ex5 = document.createElement('section');
+      ex5.className = 'left-content';
+      ex2.appendChild(ex5);
+
+      let ex6 = document.createElement('section');
+      ex6.className = 'right-content';
+      ex2.appendChild(ex6);
+
+      let ex7 = document.createElement('img');
+      ex7.className = 'small.image';
+      ex7.src = 'https://picsum.photos/200';
+      ex5.appendChild(ex7);
+
+      let ex8 = document.createElement('ul');
+      let lista = ['Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      for (let index = 0; index < lista.length; index += 1) {
+        let listaOrdem = lista[index];
+
+        let listItem = document.createElement('li');
+        listItem.innerText = listaOrdem;
+        ex8.appendChild(listItem);
+      }
+      ex6.appendChild(ex8);
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
