@@ -130,3 +130,28 @@ function tarefaPersonalizada(tarefa) {
 
 }
 tarefaPersonalizada('Lavar Louça')
+
+
+function legendaTarefa(cor) {
+    let tagPai = document.querySelector('.my-tasks');
+    let tagFilha = document.createElement('div');
+    tagFilha.className = 'task';
+    tagFilha.style.backgroundColor = cor;
+    tagPai.appendChild(tagFilha);
+}
+legendaTarefa('red');
+
+
+function selecionaTarefa() {
+    let taskSelected = document.getElementsByClassName('task selected');
+    let mytask = document.querySelector('.task');
+
+    mytask.addEventListener('click', function(event){
+        if (taskSelected.length === 0) {
+            event.target.className = 'task selected';
+        } else {
+            event.target.className = 'task';
+        }
+    });
+}
+selecionaTarefa();
