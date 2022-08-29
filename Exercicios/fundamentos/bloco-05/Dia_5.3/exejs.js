@@ -68,3 +68,56 @@ function displayHolidays() {
     });
   }
 displayHolidays();
+
+
+
+
+function createAnotherButton(buttonName) {
+    let getButtonFriday = document.querySelector('.buttons-container');
+    let createButtonFriday = document.createElement('button');
+    createButtonFriday.id = 'btn-friday';
+    createButtonFriday.innerHTML = buttonName;
+    getButtonFriday.appendChild(createButtonFriday);
+
+}
+createAnotherButton('Sexta-Feira');
+
+function displayFriday(sextas) {
+    let getFridayButton = document.querySelector('#btn-friday');
+    let getFriday = document.querySelectorAll('.friday')
+    let newFridayText = 'Hoje é sexta feiraaa!'
+  
+    getFridayButton.addEventListener('click', function() {
+      for (let index = 0; index < getFriday.length; index += 1) {
+        if (getFriday[index].innerHTML !==  newFridayText) {
+          getFriday[index].innerHTML = newFridayText;
+        } else {
+          getFriday[index].innerHTML = sextas[index];
+        }
+      }
+    });
+  }
+let decemberFridays = [4, 11, 18, 25]  
+displayFriday(decemberFridays);
+
+
+
+
+
+function daymouseOver() {
+    let dias = document.querySelector('#days');
+    dias.addEventListener('mouseover', function(event) {
+        event.target.style.fontSize = '30px';
+        event.target.style.fontWeight = '300px'
+    });
+}
+
+function daymouseOut() {
+    let dias = document.querySelector('#days');
+    dias.addEventListener('mouseout', function(event) {
+        event.target.style.fontSize = '20px';
+        event.target.style.fontsize = '200px';
+    });
+}
+daymouseOver();
+daymouseOut();
