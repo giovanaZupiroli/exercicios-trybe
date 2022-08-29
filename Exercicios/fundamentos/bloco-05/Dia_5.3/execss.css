@@ -4,8 +4,8 @@
   }
   
   body {
-    font-family: 'Dancing Script', cursive;
-    background-color: rgb(147, 156, 174);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #eee;
   }
   
   button {
@@ -17,7 +17,7 @@
   }
   
   .buttons-container {
-    background-color: rgb(59, 149, 50);
+    background-color: #eee;
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -28,14 +28,13 @@
   }
   
   #days li {
-    color: rgb(59, 149, 50);
+    color: #777;
     display: inline-block;
     font-size:20px;
     margin: 5px 0;
     text-align: center;
     vertical-align: middle;
     width: 13.6%;
-    
   }
   
   .input-container {
@@ -49,7 +48,7 @@
   }
   
   label {
-    color: rgb(97, 25, 33);
+    color: #666;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -57,14 +56,13 @@
   }
   
   .month-container {
-    background: rgb(190, 44, 44);
+    background: green;
     padding: 40px 25px;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
   }
   
   .month-container ul li {
-    color:rgb(226, 165, 82);
+    color:white;
     font-size: 20px;
     letter-spacing: 3px;
     list-style-type: none;
@@ -96,7 +94,7 @@
   }
   
   .my-tasks span {
-    color: rgb(97, 25, 33);
+    color: #666;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 3px;
@@ -112,7 +110,7 @@
   }
   
   .tasks-container h3 {
-    color: rgb(97, 25, 33);
+    color: #666;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 20px;
@@ -131,7 +129,7 @@
   .task-list-container ul {
     list-style-type: none;
     padding: 0;
-    color: rgb(97, 25, 33);
+    color: #666;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -143,7 +141,7 @@
   }
   
   .week-days li {
-    color: rgb(97, 25, 33);
+    color: #666;
     display: inline-block;
     text-align: center;
     vertical-align: middle;
