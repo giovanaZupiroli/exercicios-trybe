@@ -121,3 +121,12 @@ function daymouseOut() {
 }
 daymouseOver();
 daymouseOut();
+
+function tarefaPersonalizada(tarefa) {
+    let tagPai = document.querySelector('.my-tasks');
+    let tagFilha = document.createElement('span');
+    tagFilha.innerHTML = tarefa;
+    tagPai.appendChild(tagFilha);
+
+}
+tarefaPersonalizada('Lavar Louça')
