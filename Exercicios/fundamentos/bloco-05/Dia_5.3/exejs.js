@@ -155,3 +155,21 @@ function selecionaTarefa() {
     });
 }
 selecionaTarefa();
+
+function atribuiCorAoDia() {
+    let dias = document.querySelector('#days');
+    let selectedTask = document.getElementsByClassName('task selected');
+    let taskDiv = document.querySelector('.task');
+    let taskColor = taskDiv.style.backgroundColor;
+
+    dias.addEventListener('click', function(event) {
+        let cor = event.target.style.color;
+        if (selectedTask.length > 0 && cor !== taskColor) {
+            let color = selectedTask[0].style.backgroundColor;
+            event.target.style.color = color;
+        } else if (cor === taskColor) {
+            event.target.style.color = 'rgb(119,119,119)';
+        }
+    });
+}
+atribuiCorAoDia();
