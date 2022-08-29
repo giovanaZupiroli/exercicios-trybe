@@ -173,3 +173,37 @@ function atribuiCorAoDia() {
     });
 }
 atribuiCorAoDia();
+
+
+
+
+function compromissos() {
+    let addInputButton = document.querySelector('#btn-add');
+    let getInputField = document.querySelector('#task-input');
+    let getTaskList = document.querySelector('.task-list');
+
+    addInputButton.addEventListener('click', function() {
+        if(getInputField.value.length > 0) {
+            let newLi = document.createElement('li');
+            newLi.innerText = getInputField.value;
+
+            getTaskList.appendChild(newLi);
+            getInputField.value = '';
+            
+        } else {
+            alert('Não existe compromisso!');
+        }
+    });
+
+    getInputField.addEventListener('keyup', function(event) {
+        if(event.key === 'Enter' && getInputField.value.length > 0){
+            let novaLi = document.createElement('li');
+            novaLi.innerText = getInputField.value;
+
+            getTaskList.appendChild(novaLi);
+            getInputField.value = '';
+    
+        } 
+    });
+}
+compromissos();
