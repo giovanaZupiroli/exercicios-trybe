@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML & CSS Forms</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+  </head>
+  <body class="pink lighten-5 purple-text text-darken-4">
+    <header class="center-align">
+      <h1>Concorra a uma viagem!</h1>
+    </header>
+    <main>
+      <form action="" method="get" id="form">
+        <fieldset>
+          <label for="nome" class="purple-text text-darken-4"> Nome completo:
+            <input type="text" id="nome" minlength="10" maxlength="40" required>
+          </label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <label for="email" class="purple-text text-darken-4"> Email:
+            <input type="email" id="email" minlength="10" maxlength="50" required>
+          </label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <p>Destino preferido:</p>
+          <p>
+            <label>
+              <input type="radio" id="destiny_1" name="destiny" class="with-gap">
+              <span class="purple-text">Cidade</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" id="destiny_2" name="destiny" class="with-gap">
+              <span class="purple-text">Campo</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" id="destiny_3" name="destiny" class="with-gap">
+              <span class="purple-text">Praia</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" id="destiny_4" name="destiny" class="with-gap">
+              <span class="purple-text">Montanhas</span>
+            </label>
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <label for="resposta" class="purple-text text-darken-4"> Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?  <br>
+            <textarea name="" id="resposta" cols="30" rows="10" maxlength="500" placeholder="Maximo de 500 caracteres" class="purple-text"></textarea>
+          </label>
+        </fieldset>
+        <br>
+        <div>
+          <label for="data"> Qual o melhor dia pra fazer sua viagem? 
+            <input type="date" id="data">
+          </label>
+        </div>
+        <br>
+        <div>
+          <label for="check_1">  
+            <input type="checkbox" id="check_1"> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+          </label>
+        </div>
+        <br>
+        <div>
+          <label for="check_2">  
+            <input type="checkbox" id="check_2"> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+          </label>
+        </div>
+        <br>
+        <fieldset class="center-align">
+           
+            <button class="btn-floating btn-large purple pulse" type="submit" id="button">Enviar</button>
+            <button class="btn-floating btn-large purple pulse" type="button" id="clear">Limpar</button>
+        
+        </fieldset>
+        <br>
+
+      </form>
+     
+    </main>
+    <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
